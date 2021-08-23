@@ -1,0 +1,111 @@
+.contacts{
+
+}
+
+.contacts_column{
+    display: flex;
+    flex-direction: column;
+    padding-top: 67px;
+    align-items: center;
+    padding-bottom: 110px;
+}
+
+.c_input{
+    border: solid 1px transparent;
+    line-height: 1.2;
+    font-size: 14px;
+    font-family: "Raleway";
+    color: #50505059;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;  
+    margin-bottom: 26px;
+    padding: 25px 110px;
+    border-radius: 38px;
+    background-color: #f5fafa;
+    transition: background .3s , color .3s;
+    &:active, &:focus {
+        outline: none;
+        color: #7c7c7c; 
+        background-color: #fff;       
+    }
+    &::placeholder{
+        color: #50505059;      
+        }
+    &:focus::placeholder{
+        color:transparent;
+    }  
+}
+
+.c_button{
+    outline: none;
+    border:none;
+    font-size: 14.699px;
+    font-family: "Raleway";
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    padding: 25px 155px;
+    border-radius: 38px;
+    background-color: rgb(102, 212, 244);
+    box-shadow: 0px 10px 16px 0px rgba(102, 212, 244, 0.3); 
+    transition: background .3s , color .3s;
+    cursor: pointer;
+    &:hover{
+        color: #66d4f4;
+        background-color: #fff;
+    }
+    &:active{
+        background-color: rgb(106, 226, 132);
+        color: #fff;
+    }
+}
+
+.line,.line2{
+    margin: 0 -30px;
+    color: #dfdfdf;
+    margin-bottom: 53px;
+}
+
+@media (max-width:990px) {
+    .contacts_column {
+        padding-top: 45px;
+        padding-bottom: 85px;
+    }
+
+    .c_input{
+        padding: 20px 90px;
+        &::placeholder{
+            font-size: 11px;
+        }
+    }
+
+    .c_button{
+        padding: 20px 135px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .contacts_column {
+        padding: 35px 0;
+    }
+    .c_input{
+        font-size: 12px;
+        padding: 16px 56px;
+        &::placeholder{
+            font-size: 9px;
+        }
+
+        
+    }
+
+    .c_button {
+        padding: 16px 92px;
+        font-size: 11px;
+    }
+}
+
